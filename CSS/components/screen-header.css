@@ -15,3 +15,20 @@
   margin-left: 25px;
   position: relative;
 }
+
+@keyframes rotateCog {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateZ(360deg);
+    font-size: 200%;
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: rotateCog 0.5s ease-in-out infinite;
+}
